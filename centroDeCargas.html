@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Centro de Cargas</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/myStyles.css" />
+</head>
+<body>
+	<div class="container">
+
+		<form class="form-horizontal bespoke" onsubmit="return false;">
+
+			<h2>Centro de Cargas</h2>
+
+			<div id="details">
+
+				<div class="control-group" id="control-group-p1">
+				  <label class="control-label" for="p1">P1</label>
+				  <div class="controls">
+				    <input type="text" id="p1">
+				    <span class="help-inline" id="p1Error"></span>
+				  </div>
+				</div>
+
+				<div class="control-group" id="control-group-p2">
+				  <label class="control-label" for="p2">P2</label>
+				  <div class="controls">
+				    <input type="text" id="p2">
+				    <span class="help-inline" id="p2Error"></span>
+				  </div>
+				</div>
+
+				<div class="control-group" id="control-group-carga1">
+				  <label class="control-label" for="carga1">Carga 1</label>
+				  <div class="controls">
+				    <input type="text" id="carga1">
+				    <span class="help-inline" id="carga1Error"></span>
+				  </div>
+				</div>
+
+				<div class="control-group" id="control-group-carga2">
+				  <label class="control-label" for="carga2">Carga 2</label>
+				  <div class="controls">
+				    <input type="text" id="carga2">
+				    <span class="help-inline" id="carga2Error"></span>
+				  </div>
+				</div>
+
+				<button id="calcular" class="btn btn-large btn-block btn-primary"><i class="icon-star icon-white"></i> Calcular</button>
+			
+			</div>
+
+			<div id="results">
+				<ul>
+					<li><span class="label label-info">P1 + P2</span> <span id="pResult"></span></li>
+					<li><span class="label label-info">Carga 1 + Carga 2</span> <span id="cargaResult"></span></li>
+				</ul>
+			</div>
+
+		</form>
+
+	</div>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/calcular.js"></script>
+</body>
+</html>
